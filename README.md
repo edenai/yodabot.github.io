@@ -5,7 +5,7 @@
   - [🌐 Chatbot iframe (main branch)](#-chatbot-iframe-main-branch)
   - [💻 Chatbot embed code (embed branch)](#-chatbot-embed-code-embed-branch)
   - [🚀 Usability](#-usability)
-    - [1. Create an [`Custom ChatBot RAG`](https://docs.edenai.co/docs/ask-yoda) Project:](#1-create-an-custom-chatbot-rag-project)
+    - [1. Create an `Custom ChatBot RAG`Project:](#1-create-an-custom-chatbot-rag-project)
     - [2. Copy the Code:](#2-copy-the-code)
     - [3. Replace Parameters:](#3-replace-parameters)
     - [4. Add Optional Parameters:](#4-add-optional-parameters)
