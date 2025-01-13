@@ -2,7 +2,7 @@ var project_uuid = "";
 var provider = null;
 var model = null;
 var max_tokens = 0;
-var temperature = null;
+var temperature = 0;
 var k = 1;
 var historyChat = [];
 let title = "";
@@ -176,13 +176,17 @@ async function getYodaResponse(text) {
     llm_model: model,
     history: historyChat,
     k: k,
-    temperature,
   };
   // only add max_tokens param if it is set by user
   // if set to null, backend will throw an error
   if (max_tokens) {
     payload.max_tokens = max_tokens;
   }
+  
+  if (temperature) {
+    payload.temperature = temperature;
+  }
+
   addLoader();
   const call = await fetch(url, {
     method: "POST",
